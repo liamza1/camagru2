@@ -1,0 +1,191 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+/*end of nav*/
+
+p{
+	font-size: 0.7em;
+}
+iframe{
+	padding: 50px,50px,50px,50px;
+}
+footer{
+	clear:both;
+	margin:0;
+	display:block;
+	font-size:.5em;
+	color:white;
+	background-color:black;
+	float:right;
+ padding:10px, 10px, 10px, 10px;
+	
+}
+	/*end of footer*/
+div.img {
+    margin: 15px,15px,15px,15px;
+    border: 5px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+
+div.img  {
+    width: 100%;
+    height: auto;
+
+    
+}
+
+div.desc {
+    padding: 15px;
+    text-align: left;
+     background-color:#CFCFCF;
+}
+.gallary{
+	padding: 2em;
+  margin: 0 auto;
+  width: 1000px;
+
+}
+/* end of gallary*/
+
+            * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ 
+ h1{
+ 	font-size:1.6em;;
+ 	text-align: center;
+ }
+body {
+  font-size: 100%;
+  font-family: arial, sans-serif;
+  color: #221F51;
+}
+
+.wrapper {
+  font-size: 1.6em;
+  padding: 2em;
+  margin: 0 auto;
+  width: 1000px;
+  background-color:#CFCFCF;
+}
+form{
+	font-size: 0.7em;
+}
+  
+.mySlides{
+margin-left: 50px;
+padding-bottom: 50px;
+}
+
+#logo {
+  margin-bottom: 15px;
+  
+}
+ 
+
+ 
+#big-image {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+ 
+#newsletter {
+  background: url('images/newsletter.jpeg') bottom left no-repeat;
+  height: 34px;
+  padding-left: 54px;
+  position: relative; /* So I can position subscribe-span */
+  margin-bottom: 80px;
+}
+ 
+#signup-txt {
+  width: 317px;
+  display: inline-block;
+  font-size: .7em;
+  margin-right: 60px;
+  padding-top: 5px;
+}
+ 
+.email-input {
+  height: 30px;
+  width: 170px;
+  margin-right: 30px;
+}
+ 
+.button {
+  border:1px solid #999999;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  border-radius: 42px;
+  font-size:12px;
+  padding: 5px 15px 5px 15px;
+  text-decoration:none;
+  display:inline-block;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+  font-weight:bold;
+  color: #000000;
+  background-color: #FFFFFF; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: -o-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: linear-gradient(to bottom, #FFFFFF, #CFCFCF);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFFFFF, endColorstr=#CFCFCF);
+}
+ 
+.subscribe-span{
+  position: absolute;
+  bottom: 10;
+  margin-top: 8px;
+}
+ 
+.article {
+  font-size:70%;
+  display: inline-block;
+  width: 166px;
+  margin-right: 16px;
+}
+ 
+.art-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+.fourth-art {
+  margin-right: 0px;
+}
+
+*/
