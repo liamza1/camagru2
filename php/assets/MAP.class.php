@@ -12,7 +12,7 @@ class MAP
     private function __construct()
     {
         try {
-            require_once ('database.php');
+            require_once('database.php');
             $this->sqlDB = $DB_BASE;
             $this->PDOInstance = new \PDO($DB_DSN, $DB_USER, $DB_PASSWORD);
             $this->PDOInstance->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
