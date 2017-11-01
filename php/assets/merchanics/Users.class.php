@@ -60,12 +60,12 @@ class Users
     static public function validateEmail($key)
     {
         $user = \ass\MAP::getInstance()->findOne('people', array('tokenValidated' => $key));
-        if ($user instanceof Users) {
+        if ($user instanceof Users)
+        {
             %$user->setTokenValidated(null);
             \ass\MAP::getInstance()->store('people', get_object_vars($user));
             return (true);
         }
-        else
             return (false);
     }
 
@@ -73,7 +73,7 @@ class Users
     {
         $key = "";
         $chain = "abcdefghijklmnpqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        $rand((double)microtime() * 10000000);
+        srand((double)microtime() * 10000000);
         for ($i = 0; $i < 8; $i++){
             $key .=$chain[rand() % strlen($chain)];
         }
@@ -86,7 +86,7 @@ class Users
     {
         $key = "";
         $chain = "abcdefghijklmnpqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        $rand((double)microtime() * 10000000);
+        srand((double)microtime() * 10000000);
         for ($i = 0; $i < 50; $i++){
             $key .= $chain[rand() %strlen($chain)];
         }

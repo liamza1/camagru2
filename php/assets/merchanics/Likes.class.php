@@ -1,22 +1,62 @@
 <?php
-
 namespace ass\mech;
 
-class Image
+class Likes
 {
-    private $_image;
-    private $_filters;
+    private $id;
+    private $people;
+    private $selfie;
 
-    public function __construct( $base64, $filters, $name)
+    public function __construct()
     {
-        $this->base64ToImg($base64);
-        $this->setFileter($filters);
-        if (!empty($this->_filters)){
-            foreach ($this->_filters as $filter){
-                $this->merge($filter);
-            }
+
+    }
+    public function like()
+    {
+        $selfie = \ass\MAP::getInstance()->findOne('selfie', array('name' =>$this->selfie));
+        if ($selfie instanceof Selfie) {
+            $this->selfie = $selfie->getId();
+           $like = \ass\MAP::getInstance()->findOne('likes', array('people' => $this->people, 'selfie' => $this->selfie));
+           if ($like instanceof Likes){
+               \ass\MAP::getInstance()->delete('likes', $like->getId());
+               return(2);
+           } else {
+               \ass\MAP::getInstance()->store('likes', get_object_vars($this));
+               return(1);
+           }
         }
-        $this->save($name);
+        return (0);
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function getPeople()
+    {
+        return $this->people;
+    }
+
+    public function setPeople($people)
+    {
+        $this->people = $people;
+    }
+
+    public function getSelfie()
+    {
+        return $this->selfie;
+    }
+
+    public function setSelfie($selfie)
+    {
+        $this->selfie = $selfie;
     }
 }
+
 ?>
